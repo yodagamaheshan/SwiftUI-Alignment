@@ -17,6 +17,7 @@ enum Alignment{
 struct ContentView: View {
     var body: some View {
         VStack {
+            MyVStack()
             VStack {
                 MyRect(color: .blue)
                 MyRect(color: .red)
@@ -48,5 +49,11 @@ struct MyRect: View {
 struct VStackWithPicker: View {
     var body: some View {
         Text("my picker")
+    }
+}
+
+struct MyVStack: View {
+    var body: some View {
+        Text("VStack")
     }
 }
