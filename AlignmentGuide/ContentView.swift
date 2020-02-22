@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-enum Alignment{
-    case leading
-    case center
-    case trailing
+enum Alignment: String, CaseIterable{
+    case leading = ".leading"
+    case center = ".center"
+    case trailing = ".trailing"
 }
 
 struct ContentView: View {
