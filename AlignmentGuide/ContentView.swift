@@ -25,3 +25,13 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct MyRect: View {
+    let color: Color
+    
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 14).frame(width: 200, height: 50)
+        .foregroundColor(color)
+    }
+}
