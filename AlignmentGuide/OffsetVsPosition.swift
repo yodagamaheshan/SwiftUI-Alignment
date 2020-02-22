@@ -11,7 +11,9 @@ import SwiftUI
 struct OffsetVsPosition: View {
     var body: some View {
         Text("Hello, World!")
+            .background(Color.red)
             .position(x: 100, y: 100)
+            
     }
 }
 
