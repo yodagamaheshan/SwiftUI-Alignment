@@ -58,7 +58,14 @@ struct PresentingVStack: View {
         HStack {
             Text("VStack(")
             //TODO: me text eke meda saha border eka eka mattame thiyenna oona...add picker here
-            
+            Picker("", selection: $selectedHorizontalAlignmentName) {
+                ForEach(0 ..< 5) { item in
+                    Text("hgfhgf").tag("h")
+                }
+                
+            }
+            .frame(width: 100, height: 30, alignment: .center)
+            .clipShape(Rectangle())
             Text(")")
         }
         .background(StackBackground())
