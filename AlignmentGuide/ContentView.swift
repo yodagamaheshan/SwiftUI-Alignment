@@ -21,7 +21,10 @@ struct ContentView: View {
                 MyRect(color: .blue)
                 MyRect(color: .red)
                 MyRect(color: .yellow)
-            }.padding(15)
+            }
+            .padding(15)
+            .border(Color.black, width: 2)
+            
         }
     }
 }
@@ -38,6 +41,6 @@ struct MyRect: View {
     
     var body: some View {
         RoundedRectangle(cornerRadius: 14).frame(width: 200, height: 50)
-        .foregroundColor(color)
+            .foregroundColor(color)
     }
 }
