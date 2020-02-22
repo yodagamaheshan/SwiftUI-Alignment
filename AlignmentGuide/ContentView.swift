@@ -16,7 +16,13 @@ enum Alignment{
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            VStack {
+                MyRect(color: .blue)
+                MyRect(color: .red)
+                MyRect(color: .yellow)
+            }.padding(15)
+        }
     }
 }
 
