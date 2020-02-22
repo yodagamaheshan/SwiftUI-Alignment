@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             
-            MyVStack()
+            PresentingVStack()
                 .zIndex(1)
                 .offset(x: 16, y: 10)
             
@@ -49,7 +49,7 @@ struct MyRect: View {
     }
 }
 
-struct MyVStack: View {
+struct PresentingVStack: View {
     var body: some View {
         HStack {
             Text("VStack(")
