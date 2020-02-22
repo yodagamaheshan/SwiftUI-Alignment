@@ -15,10 +15,12 @@ enum Alignment: String, CaseIterable{
 }
 
 struct ContentView: View {
+    @State var horizontalAlignmentName: String = Alignment.center.rawValue
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             
-            PresentingVStack()
+            PresentingVStack(selectedHorizontalAlignmentName: $horizontalAlignmentName)
                 .zIndex(1)
                 .offset(x: 16, y: 10)
             
@@ -50,6 +52,8 @@ struct MyRect: View {
 }
 
 struct PresentingVStack: View {
+    @Binding var selectedHorizontalAlignmentName: String
+    
     var body: some View {
         HStack {
             Text("VStack(")
