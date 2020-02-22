@@ -16,7 +16,7 @@ enum Alignment{
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 0) {
             MyVStack()
             VStack {
                 MyRect(color: .blue)
