@@ -8,6 +8,12 @@
 
 import SwiftUI
 
+enum Alignment{
+    case leading
+    case center
+    case trailing
+}
+
 struct ContentView: View {
     var body: some View {
         Text("Hello, World!")
