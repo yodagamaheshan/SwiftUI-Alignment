@@ -17,14 +17,18 @@ enum Alignment{
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
+            
             MyVStack()
+                .zIndex(1)
+                .offset(x: 16, y: 10)
+            
             VStack {
                 MyRect(color: .blue)
                 MyRect(color: .red)
                 MyRect(color: .yellow)
             }
-            .padding(15)
-            .border(Color.black, width: 2)
+                .padding(15)
+                .border(Color.black, width: 2)
         }
     }
 }
@@ -47,6 +51,19 @@ struct MyRect: View {
 
 struct MyVStack: View {
     var body: some View {
-        Text("VStack")
+        HStack {
+            Text("VStack(")
+            //TODO: me text eke meda saha border eka eka mattame thiyenna oona...add picker here
+            
+            Text(")")
+        }
+        .background(StackBackground())
+    }
+}
+
+struct StackBackground: View {
+    var body: some View {
+        RoundedRectangle(cornerRadius: 8)
+            .fill(Color.white)
     }
 }
