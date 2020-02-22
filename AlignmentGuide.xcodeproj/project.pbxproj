@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5694FF542400D7F8007CE288 /* OffsetVsPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694FF532400D7F8007CE288 /* OffsetVsPosition.swift */; };
 		56A99AA223FD6463009C757F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99AA123FD6463009C757F /* AppDelegate.swift */; };
 		56A99AA423FD6463009C757F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99AA323FD6463009C757F /* SceneDelegate.swift */; };
 		56A99AA623FD6463009C757F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99AA523FD6463009C757F /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5694FF532400D7F8007CE288 /* OffsetVsPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetVsPosition.swift; sourceTree = "<group>"; };
 		56A99A9E23FD6463009C757F /* AlignmentGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlignmentGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99AA123FD6463009C757F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A99AA323FD6463009C757F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				56A99AA123FD6463009C757F /* AppDelegate.swift */,
 				56A99AA323FD6463009C757F /* SceneDelegate.swift */,
 				56A99AA523FD6463009C757F /* ContentView.swift */,
+				5694FF532400D7F8007CE288 /* OffsetVsPosition.swift */,
 				56A99AA723FD646B009C757F /* Assets.xcassets */,
 				56A99AAC23FD646B009C757F /* LaunchScreen.storyboard */,
 				56A99AAF23FD646B009C757F /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				56A99AA223FD6463009C757F /* AppDelegate.swift in Sources */,
 				56A99AA423FD6463009C757F /* SceneDelegate.swift in Sources */,
+				5694FF542400D7F8007CE288 /* OffsetVsPosition.swift in Sources */,
 				56A99AA623FD6463009C757F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
