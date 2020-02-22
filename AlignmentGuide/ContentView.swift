@@ -25,7 +25,6 @@ struct ContentView: View {
             }
             .padding(15)
             .border(Color.black, width: 2)
-            .overlay(VStackWithPicker())
         }
     }
 }
@@ -43,12 +42,6 @@ struct MyRect: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 14).frame(width: 200, height: 50)
             .foregroundColor(color)
-    }
-}
-
-struct VStackWithPicker: View {
-    var body: some View {
-        Text("my picker")
     }
 }
 
