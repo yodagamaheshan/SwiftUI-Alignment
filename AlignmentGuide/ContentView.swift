@@ -59,10 +59,9 @@ struct PresentingVStack: View {
             Text("VStack(")
             //TODO: me text eke meda saha border eka eka mattame thiyenna oona...add picker here
             Picker("", selection: $selectedHorizontalAlignmentName) {
-                ForEach(0 ..< 5) { item in
-                    Text("hgfhgf").tag("h")
+                ForEach(Alignment.allCases, id: \.self) { (element)  in
+                    Text(element.rawValue)
                 }
-                
             }
             .frame(width: 100, height: 30, alignment: .center)
             .clipShape(Rectangle())
