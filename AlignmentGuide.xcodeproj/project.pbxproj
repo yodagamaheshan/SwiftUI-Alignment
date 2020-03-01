@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		5694FF532400D7F8007CE288 /* OffsetVsPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetVsPosition.swift; sourceTree = "<group>"; };
-		56A99A9E23FD6463009C757F /* AlignmentGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlignmentGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A99A9E23FD6463009C757F /* AlignmentGuidee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlignmentGuidee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99AA123FD6463009C757F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A99AA323FD6463009C757F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56A99AA523FD6463009C757F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		56A99A9F23FD6463009C757F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56A99A9E23FD6463009C757F /* AlignmentGuide.app */,
+				56A99A9E23FD6463009C757F /* AlignmentGuidee.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 			);
 			name = AlignmentGuide;
 			productName = AlignmentGuide;
-			productReference = 56A99A9E23FD6463009C757F /* AlignmentGuide.app */;
+			productReference = 56A99A9E23FD6463009C757F /* AlignmentGuidee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -297,8 +297,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HeshCompany.AlignmentGuide;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "HeshCompany.arsalanalishah1--arsalanalishah1";
+				PRODUCT_NAME = AlignmentGuidee;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,8 +317,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HeshCompany.AlignmentGuide;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "HeshCompany.arsalanalishah1--arsalanalishah1";
+				PRODUCT_NAME = AlignmentGuidee;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

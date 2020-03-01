@@ -18,19 +18,17 @@ struct ContentView: View {
     @State var horizontalAlignmentName: String = Alignment.center.rawValue
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            
-            PresentingVStack(selectedHorizontalAlignmentName: $horizontalAlignmentName)
-                .zIndex(1)
-                .offset(x: 16, y: 10)
+        ZStack(alignment: .topLeading){
             
             VStack {
                 MyRect(color: .blue)
                 MyRect(color: .red)
                 MyRect(color: .yellow)
             }
-                .padding(15)
-                .border(Color.black, width: 2)
+            .padding(15)
+            .border(Color.black, width: 2)
+            
+            PresentingVStack(selectedHorizontalAlignmentName: $horizontalAlignmentName)
         }
     }
 }
