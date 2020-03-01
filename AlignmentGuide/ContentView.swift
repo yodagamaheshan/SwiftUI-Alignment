@@ -28,6 +28,7 @@ struct ContentView: View {
             }
             .padding(15)
             .border(Color.black, width: 2)
+            .animation(.default)
             
             PresentingVStack(selectedHorizontalAlignmentName: $horizontalAlignment)
                 .alignmentGuide(.top) { (viewDimensions) -> CGFloat in
