@@ -74,7 +74,9 @@ struct PresentingVStack: View {
             //TODO: me text eke meda saha border eka eka mattame thiyenna oona...add picker here
             Picker("", selection: $selectedHorizontalAlignmentName) {
                 ForEach(Alignment.allCases, id: \.self) { (element)  in
-                    Text(element.rawValue).tag(element)
+                    Text(element.rawValue)
+                        .tag(element)
+                        .foregroundColor(.black)
                 }
             }
             .frame(width: 100, height: 30, alignment: .center)
