@@ -18,7 +18,7 @@ struct ContentView: View {
     @State var horizontalAlignmentName: String = Alignment.center.rawValue
     
     var body: some View {
-        ZStack(alignment: .topLeading){
+        ZStack(alignment: .top){
             
             VStack {
                 MyRect(color: .blue)
@@ -29,6 +29,9 @@ struct ContentView: View {
             .border(Color.black, width: 2)
             
             PresentingVStack(selectedHorizontalAlignmentName: $horizontalAlignmentName)
+                .alignmentGuide(.top) { (viewDimensions) -> CGFloat in
+                viewDimensions.height/2
+            }
         }
     }
 }
