@@ -15,23 +15,35 @@ enum Alignment: String, CaseIterable{
 }
 
 struct ContentView: View {
-    @State var horizontalAlignmentName: String = Alignment.center.rawValue
+    @State var horizontalAlignment: Alignment = Alignment.center
     
     var body: some View {
         ZStack(alignment: .top){
             
-            VStack {
+            VStack(alignment: getAlignmentValue(userSelectedAlignment: horizontalAlignment)) {
                 MyRect(color: .blue)
+                    .alignmentGuide(HorizontalAlignment.center) { _ in 10 }
                 MyRect(color: .red)
                 MyRect(color: .yellow)
             }
             .padding(15)
             .border(Color.black, width: 2)
             
-            PresentingVStack(selectedHorizontalAlignmentName: $horizontalAlignmentName)
+            PresentingVStack(selectedHorizontalAlignmentName: $horizontalAlignment)
                 .alignmentGuide(.top) { (viewDimensions) -> CGFloat in
                 viewDimensions.height/2
             }
+        }
+    }
+    
+    func getAlignmentValue(userSelectedAlignment: Alignment) -> HorizontalAlignment {
+        switch userSelectedAlignment {
+        case .center:
+            return HorizontalAlignment.center
+        case .leading:
+            return HorizontalAlignment.leading
+        case .trailing:
+            return HorizontalAlignment.trailing
         }
     }
 }
@@ -53,7 +65,7 @@ struct MyRect: View {
 }
 
 struct PresentingVStack: View {
-    @Binding var selectedHorizontalAlignmentName: String
+    @Binding var selectedHorizontalAlignmentName: Alignment
     
     var body: some View {
         HStack {
@@ -61,7 +73,7 @@ struct PresentingVStack: View {
             //TODO: me text eke meda saha border eka eka mattame thiyenna oona...add picker here
             Picker("", selection: $selectedHorizontalAlignmentName) {
                 ForEach(Alignment.allCases, id: \.self) { (element)  in
-                    Text(element.rawValue)
+                    Text(element.rawValue).tag(element)
                 }
             }
             .frame(width: 100, height: 30, alignment: .center)
